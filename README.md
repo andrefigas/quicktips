@@ -12,6 +12,10 @@
 - compile "io.reactivex.rxjava2:rxjava:2.1.9"
 - compile "io.reactivex.rxjava2:rxandroid:2.0.2"
 
+### Defining Route ###
+
+buildConfigField 'String', 'ROUTE_API', '"http://..."'
+
 ### Creating Retrofit Instance ###
 
         val clientBuilder = OkHttpClient().newBuilder().addNetworkInterceptor(StethoInterceptor())
